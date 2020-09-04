@@ -1,0 +1,138 @@
+邮箱：shuang.zhang@baishancloud.com；密码：Zs123456；登录地址：mail.baishancloud.com（已开通）
+白学：shuang.zhang@baishancloud.com，密码：123456
+JIRA：shuang.zhang，密码：邮箱内JIRA系统邮件链接进入自行设置；（开通后会收到邮件）
+VPN：
+账号：shuang.zhang，密码：通过最后的链接申请重置（开通后会收到邮件）
+BaishanGuest供访客访问(连接密码为BaishanGuest888)
+员工登录使用BaishanStaff(连接密码为BSY-!Cloud@#$),登陆用户名密码为VPN用户名及密码
+重置密码链接：uc.baishancloud.com/baishan-family-forget/
+
+
+
+管理平台 2.0 使用手册
+http://orchsym.baishancloud.com/doc/manager/
+
+管理平台2.0 DEMO 环境与登录方式
+http://orchsym-demo.baishancloud.com
+admin@orchsym.com/passw0rd
+
+2.0测试环境
+http://172.18.28.244:8888/#/user/login
+admin@baishancloud.com/123456
+
+编排测试环境：https://172.18.28.244:18443/runtime/login
+admin@orchsym.com
+passw0rd
+
+
+
+wifi/vpn:shuang.zhang   Zs123456..
+邮箱：shuang.zhang@baishancloud.com；密码：Zs123456
+jira:shuang.zhang    Zs123456..
+
+
+北京vpn：
+域名方式:  https://bsy-vpn.bs58i.baishancloud.com:8443 
+北京指定IP： https://36.110.61.125:8443
+
+管理平台3.0：http://172.18.28.248:8888/#/api/project
+账号密码：keycloak@bsy.com/111111
+产品原型：http://heheapp.com/rp/index.html
+
+240环境
+http://172.18.18.240:8888
+admin@orchsym.com/passw0rd
+240编排
+https://172.18.18.240:8443/runtime/
+admin@orchsym.com
+passw0rd
+
+
+3.0 dev环境(dev 分支自动部署)
+http://172.18.28.240:8888
+https://172.18.28.240:8443
+admin@orchsym.com/passw0rd
+
+http://172.18.28.240:8280
+keycloak/keycloak
+
+3.0 release 环境(release 分支自动部署)
+http://172.18.18.240:8888
+https://172.18.18.240:8443
+admin@orchsym.com/passw0rd
+
+http://172.18.18.240:8280
+keycloak/keycloak
+
+
+提交代码：
+提交commit到自己远程分支
+git checkout zhangyanwei
+git add .
+git commit -m
+git push
+
+合并自己分支到master
+git checkout master
+git fetch
+git rebase origin/zhangyanwei
+git add.
+git rebase --continue(如果上一步文件有冲突，修改后，使用这个命令)
+git push
+
+
+拉取master到自己的分支，
+首先确保自己在自己的分支 git checkout zhanghusang
+git rebase origin/master
+git push
+git checkout zhangshuang
+
+===============================
+
+
+alias gl='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\'' --abbrev-commit'
+
+
+
+easy mock
+baishantest/1234qwer
+
+
+转换工具连接
+Swagger格式转换工具
+saas的有
+https://www.apimatic.io/transformer
+https://swagger.io/tools/swaggerhub/
+
+开源的有
+https://mermade.github.io/oas-kit/ （demo: https://mermade.org.uk/openapi-converter)
+
+
+飞蛾：access secret：HVL4XlHu8uuWrp4txUxgfbEFF3HpeSy9vb9b91Yg
+
+
+git fetch -all
+git reset --hard origin/master
+git pull
+
+
+
+git tag V3.0_08_1219
+推送本地所有tag，使用git push origin --tags
+
+
+rebase合并分支
+git checkout master
+git fetch
+git rebase zhangshuang
+git fetch
+解决冲突
+git add .  提交解决冲突文件
+git rebase --continue
+如果没修改文件， git rebase --skip
+git push
+
+
+
+
+
